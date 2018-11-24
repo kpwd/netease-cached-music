@@ -21,10 +21,10 @@ int main(int argc,char* arg[]){
     if(!o){
     	const char *add=".mp3\0";
     	char len=strlen(arg[1]);
-		char *n=(char *)malloc(len+4+1);
-		memcpy(n,arg[1],len);
-		memcpy(n+len,add,5);
-		printf("OutputFile:%s\r\n",n);
+	char *n=(char *)malloc(len+4+1);
+	memcpy(n,arg[1],len);
+	memcpy(n+len,add,5);
+	printf("OutputFile:%s\r\n",n);
     	o=fopen(n,"w");
     	free(n);
     }else
