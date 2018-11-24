@@ -19,7 +19,7 @@ int main(int argc,char* arg[]){
     }
     printf("InputFile:%s\r\n",arg[1]);
     if(!o){
-    	const char *add=".mp3\n";
+    	const char *add=".mp3\0";
     	char len=strlen(arg[1]);
 		char *n=(char *)malloc(len+4+1);
 		memcpy(n,arg[1],len);
